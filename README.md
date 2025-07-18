@@ -27,5 +27,23 @@
 - See all my connection requests
 - Accept reject the conection request
 - Feature to interest/ignore the other users
-- 
- # DevTinder-web
+
+
+# Deployment
+- SignUp on AWS
+- Launch instances
+- chmod 400 <secret>.pem
+- ssh -i "devTinder-secret.pem" ubuntu@ec2-13-61-176-230.eu-north-1.compute.amazonaws.com
+- Install correct version of code
+- Git clone of both frontend and backend
+
+- Frontend
+   - npm install => install dependencies
+   - npm run build
+   - sudo apt update
+   - sudo apt install nginx
+   - sudo systemctl start nginx
+   - sudo systemctl enable nginx
+   - copy folder from dist(build files) to /var/www/html/
+   - sudo scp -r dist/* /var/www/html/
+   - enable port :80 of your instance
