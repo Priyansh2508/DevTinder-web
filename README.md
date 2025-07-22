@@ -47,3 +47,9 @@
    - copy folder from dist(build files) to /var/www/html/
    - sudo scp -r dist/* /var/www/html/
    - enable port :80 of your instance
+
+- Backend
+   - allowed ip on mingodb
+   - npm install pm2 --g
+   - 
+   - 
