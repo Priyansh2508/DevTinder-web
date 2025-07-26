@@ -53,3 +53,26 @@
    - npm install pm2 --g
    - 
    - 
+
+
+   FRONTEND => http://13.60.173.63/
+   BACKEND  => http://13.60.173.63:3000
+
+   Domain name = DevTinder.com => 13.60.173.63
+
+   FRONTEND = DevTinder.com
+   BACKEND =  DevTinder.com:3000 => DevTinder.com/api
+
+
+# Nginx Config
+
+   server name => 13.60.173.63
+
+   location /api/ {
+                        proxy_pass http://localhost:3000/;
+                        proxy_http_version 1.1;
+                        proxy_set_header Upgrade $http_upgrade;
+                        proxy_set_header Connection 'upgrade';
+                        proxy_set_header Host $host;
+                        proxy_cache_bypass $http_upgrade;
+                       }

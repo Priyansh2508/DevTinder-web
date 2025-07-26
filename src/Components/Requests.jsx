@@ -14,7 +14,7 @@ const Requests = () =>{
     const reviewRequest = async (status,_id) =>{
       try {
 
-        const res = await  axios.post(BASE_URL + "/request/request/review/" + status +"/" +_id,{},{withCredentials: true});
+        const res = await  axios.post(BASE_URL + "/request/request/reveiw/" + status +"/" +_id,{},{withCredentials: true});
         dispatch(removeRequests(_id));
       } catch (error) {
         console.log("api not working!");
