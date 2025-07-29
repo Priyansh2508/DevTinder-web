@@ -36,7 +36,7 @@ const NavBar = () => {
 
             <div className="w-10 rounded-full">
               <img
-                className="rounded-2xl"
+                className="rounded-2xl mt-2.5"
                 src={user.photoUrl}
               />
             </div>
