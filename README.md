@@ -51,7 +51,10 @@
 - Backend
    - allowed ip on mingodb
    - npm install pm2 --g
-   - 
+   - pm2 start npm --name "DevTinder-Backend" -- start
+   - pm2 logs
+   - pm2 list, pm2 flush <name> 
+   - sudo systemctl restart nginx
    - 
 
 
@@ -76,3 +79,30 @@
                         proxy_set_header Host $host;
                         proxy_cache_bypass $http_upgrade;
                        }
+
+# Adding a custom domain name
+- Purchased domain name from GoDaddy
+- signup on cloudflare
+- changed the name servers on GoDaddy and point it to cloudflare
+- wait for sometime till your nameservers are updated
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+NOTE- you can buy domain name from any registrar but the if the nameservers is of other entity then other entity will manage the domains
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- DNS Records A devconnect.org.in 13.60.173.63
+- Enable SSL for website
+
+# Sending Email via SES
+- Create a IAM user 
+- Give aces to AmazonSESFullaccess
+- Amazon SES: create an identity
+- verify your domain name
+- verify an email address
+- Install AWS SDK - v3
+- Code Examples - https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples
+- Setup sesClient 
+- Access credentials should be created in IAM under securityCredentials tab
+- add the credentials to the new env file
+- write code for sesClient 
+- write code for sendEmail
+- make the email dynamic but i have not done that
+- 
