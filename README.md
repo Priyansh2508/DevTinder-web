@@ -105,4 +105,26 @@ NOTE- you can buy domain name from any registrar but the if the nameservers is o
 - write code for sesClient 
 - write code for sendEmail
 - make the email dynamic but i have not done that
-- 
+
+# Scheduling cron jobs
+- Istalled npm-cron module
+- created a cronjob file in utils 
+- called the file in app.js
+- remember the meaning of the string in cro jobs (.schedule)
+- date fns
+- Amazon ses bulk emails
+
+# Razorpay payment integration 
+- Signup on razorpay and complete KYC
+- Go through the steps (How it works?)
+- Created a UI for premium page
+- Created an API for create order in backend
+- Initialized Razorpay in utils
+- creating order on razorpay
+- created a schema and model
+- saved the order in payments collection
+- make the api dynamic
+- Setup razorpay webhook on your live API
+- ref - https://github.com/razorpay/razorpay-node/blob/master/documents/webhook.md
+- ref - https://razorpay.com/docs/webhooks/payloads/payments/
+-

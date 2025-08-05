@@ -1,4 +1,3 @@
-
 import Body from './Components/Body';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from './Components/Profile';
@@ -8,7 +7,7 @@ import Login from './Components/Login';
 import Feed from './Components/Feed';
 import Connections from './Components/Connections';
 import Requests from './Components/Requests';
-
+import Premium from './Components/premium';
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
          <Route path='/feed' element={<Feed/>}/>
          <Route path='/connections' element={<Connections/>}/>
          <Route path='/requests' element={<Requests/>}/>
+         <Route path='/premium' element={<Premium/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
