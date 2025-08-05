@@ -7,7 +7,7 @@ import Login from './Components/Login';
 import Feed from './Components/Feed';
 import Connections from './Components/Connections';
 import Requests from './Components/Requests';
-import Premium from './Components/premium';
+import Premium from './Components/Premium';
 
 function App() {
   return (
