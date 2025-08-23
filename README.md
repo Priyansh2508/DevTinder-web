@@ -28,7 +28,6 @@
 - Accept reject the conection request
 - Feature to interest/ignore the other users
 
-
 # Deployment
 - SignUp on AWS
 - Launch instances
@@ -49,7 +48,7 @@
    - enable port :80 of your instance
 
 - Backend
-   - allowed ip on mingodb
+   - allowed ip on mongodb
    - npm install pm2 --g
    - pm2 start npm --name "DevTinder-Backend" -- start
    - pm2 logs
@@ -127,4 +126,8 @@ NOTE- you can buy domain name from any registrar but the if the nameservers is o
 - Setup razorpay webhook on your live API
 - ref - https://github.com/razorpay/razorpay-node/blob/master/documents/webhook.md
 - ref - https://razorpay.com/docs/webhooks/payloads/payments/
--
+
+# Realtime chat using websockets (socket.io)
+- Built the UI on "/chat" route
+- Setup socket.io in backend
+- 
